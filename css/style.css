@@ -1,0 +1,309 @@
+body {
+  font-family: Arial;
+  /* margin-top: 70px; */
+}
+
+.hero {
+
+  height: 100vh;
+
+  background-image:
+    linear-gradient(to right,
+      rgba(255, 255, 255, 0.95) 30%,
+      rgba(255, 255, 255, 0.65) 50%,
+      rgba(255, 255, 255, 0.1) 70%,
+      rgba(255, 255, 255, 0) 100%),
+    url("../images/chef.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  padding: 40px 80px;
+
+}
+
+/* Navbar */
+
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo {
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #7a3b2b;
+
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  font-weight: 500;
+  margin-right: auto;
+  margin-left: 200px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-links li.active::after {
+
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: black;
+  bottom: -6px;
+  left: 0;
+
+}
+
+/* Hero content */
+
+.hero-content {
+
+  max-width: 520px;
+  margin-top: 120px;
+
+}
+
+.hero-content h1 {
+
+  font-family: 'Playfair Display';
+  font-size: 70px;
+  color: #8a3e2d;
+  line-height: 1.1;
+  margin-bottom: 20px;
+
+}
+
+.hero-content p {
+
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 30px;
+
+}
+
+.btn {
+
+  padding: 14px 28px;
+  background: #8a3e2d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  background: #6e2f21;
+}
+
+/* About section */
+.about-section {
+  background: linear-gradient(to bottom, #e8f8f5 0%, #e8f8f5 60%, #f5f5f5 100%);
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Title */
+.about-title {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 48px;
+  font-style: italic;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* Content */
+.about-content {
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.about-content p:last-child {
+  margin-bottom: 40px;
+}
+
+.about-content strong {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Cake image */
+.cake-image-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cake-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.dream {
+  background: url('../images/dream.jpg');
+  height: 350px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-size: 100% 165%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.dream h2 {
+  font-size: 42px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.explore {
+  background: #b7d4cf;
+  padding: 70px 0;
+}
+
+.explore img {
+  width: 250px;
+  height: 250px;
+}
+
+.product-tabs span {
+  margin: 0 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.product-tabs .active {
+  border-bottom: 2px solid black;
+}
+
+.product-img {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.product-img:hover {
+  transform: scale(1.05);
+}
+
+.cupcake {
+  background: url("../images/cupcake.jpg");
+  background-repeat: no-repeat;
+  padding: 20px 0 140px 0;
+  background-size: 100% 112%;
+  background-position: top;
+}
+
+.featured {
+  background: #ead8b6;
+  padding: 70px 0;
+}
+
+.featured .card {
+  border: 0;
+  background-color: transparent;
+}
+
+.featured .feature-img.waffle {
+  background: url('../images/explore-more/waffles.jpeg');
+
+}
+
+.featured .feature-img.pastry {
+  background: url('../images/explore-more/pastry1.jpeg');
+
+}
+
+.featured .feature-img.tiramisu {
+  background: url('../images/explore-more/tiramisu.jpeg');
+
+}
+
+.featured .feature-img {
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+
+
+.footer {
+  background: #5a4034;
+  color: white;
+  padding: 60px 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+@media(max-width:840px) {
+  .nav-links {
+    gap: 15px;
+    margin-right: 0;
+  }
+}
+
+@media(max-width:768px) {
+
+  .hero {
+    padding: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 45px;
+  }
+
+  .nav-links {
+    font-size: 14px;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+}
