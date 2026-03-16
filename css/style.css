@@ -33,8 +33,21 @@ body {
       rgba(255, 255, 255, 0) 100%),
     url("../images/mission/banner.jpg");
   background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100% 180%;
+  background-repeat: no-repeat;
+  background-size: 100% 180%;
+}
+
+.contact-us {
+  background-image:
+    linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.50) 30%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(255, 255, 255, 0) 100%),
+    url("../images/contact-us/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .text-theme-primary {
@@ -138,9 +151,35 @@ body {
 
 /* About section */
 .about-section {
-  background: linear-gradient(to bottom, #e8f8f5 0%, #e8f8f5 60%, #f5f5f5 100%);
-  padding-top: 60px;
-  padding-bottom: 0;
+  background: linear-gradient(to bottom, #bcded7 0%, #bcded7 45%, rgba(188, 222, 215, 0.85) 60%, rgba(188, 222, 215, 0.5) 75%, rgba(188, 222, 215, 0) 100%), url("../images/about-cake.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 60%;
+}
+
+.mission-section {
+  background: linear-gradient(to bottom, #bcded7 0%, #bcded7 45%, rgba(188, 222, 215, 0.85) 60%, rgba(188, 222, 215, 0.5) 75%, rgba(188, 222, 215, 0) 100%), url("../images/mission/mission.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+/* TITLE */
+.about-title {
+  font-family: 'Playfair Display';
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+
+/* TEXT */
+.about-text {
+  max-width: 900px;
+  margin: auto;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .vission-section {
@@ -176,8 +215,7 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-/* Title */
+/* 
 .about-title {
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 48px;
@@ -188,7 +226,6 @@ body {
   font-weight: 600;
 }
 
-/* Content */
 .about-content {
   text-align: center;
 }
@@ -207,7 +244,7 @@ body {
 .about-content strong {
   font-weight: 600;
   color: #1a1a1a;
-}
+} */
 
 /* Cake image */
 .cake-image-container {
@@ -328,6 +365,64 @@ body {
   margin-bottom: 10px;
 }
 
+.contact-section {
+
+  background: #bcded7;
+  padding: 80px 5rem;
+
+}
+
+.filter {
+  margin: 0 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.filter.active {
+  font-weight: 600;
+}
+
+/* Image */
+
+.contact-section .cake-img {
+  max-width: 100%;
+}
+
+/* Heading */
+
+.contact-section .contact-title {
+
+  font-family: 'Playfair Display';
+  font-size: 52px;
+  margin-bottom: 10px;
+
+}
+
+.contact-section .contact-subtitle {
+
+  color: #6b6b6b;
+  margin-bottom: 30px;
+
+}
+
+/* Button */
+
+.contact-section .send-btn {
+
+  background: #8a3e2d;
+  color: white;
+  padding: 14px 35px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+
+}
+
+.contact-section .send-btn:hover {
+  background: #6d2d21;
+  color: white;
+}
+
 @media(max-width:840px) {
   .nav-links {
     gap: 15px;
@@ -336,6 +431,18 @@ body {
 }
 
 @media(max-width:768px) {
+  .about-title {
+    font-size: 36px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .about-section {
+    padding-bottom: 300px;
+  }
 
   .hero {
     padding: 30px;
