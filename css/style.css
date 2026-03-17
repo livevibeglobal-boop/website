@@ -473,7 +473,7 @@ body {
   }
 
   .hero {
-    padding: 30px;
+    padding: 0 30px;
   }
 
   .hero-content h1 {
@@ -490,4 +490,13 @@ body {
     height: 550px;
   }
 
+}
+
+@media(max-width:600px) {
+  .about-us-section {
+    display: block !important;
+  }
+  .about-us-section .section-1 {
+    width: 100% !important;
+  }
 }
