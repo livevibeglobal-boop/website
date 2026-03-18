@@ -37,13 +37,7 @@ body {
 
   height: 100vh;
 
-  background-image:
-    linear-gradient(to right,
-      rgba(255, 255, 255, 0.95) 30%,
-      rgba(255, 255, 255, 0.65) 50%,
-      rgba(255, 255, 255, 0.1) 70%,
-      rgba(255, 255, 255, 0) 100%),
-    url("../images/chef.png");
+  background-image: url("../images/chef.png");
 
   background-size: cover;
   background-position: center;
@@ -55,29 +49,17 @@ body {
 }
 
 .mission {
-  background-image:
-    linear-gradient(to bottom,
-      rgba(255, 255, 255, 0.50) 30%,
-      rgba(255, 255, 255, 0) 50%,
-      rgba(255, 255, 255, 0) 70%,
-      rgba(255, 255, 255, 0) 100%),
-    url("../images/mission/banner.jpg");
-  background-position: top;
+  background-image: url("../images/mission/banner.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 180%;
+  background-size: cover;
 }
 
 .contact-us {
-  background-image:
-    linear-gradient(to bottom,
-      rgba(255, 255, 255, 0.50) 30%,
-      rgba(255, 255, 255, 0) 50%,
-      rgba(255, 255, 255, 0) 70%,
-      rgba(255, 255, 255, 0) 100%),
-    url("../images/contact-us/banner.png");
+  background-image: url("../images/contact-us/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .text-theme-primary {
@@ -113,17 +95,17 @@ body {
 
   list-style: none;
   display: flex;
-  gap: 50px;
+  gap: 40px;
   font-weight: bold;
   margin-right: auto;
-  margin-left: 150px;
+  margin-left: 80px;
   font-size: 18px;
 }
 
 .nav-links li {
   cursor: pointer;
   position: relative;
-  font-family: 'Poppins';
+  /* font-family: 'Poppins'; */
   font-size: 22px;
   font-weight: 600;
 }
@@ -185,19 +167,21 @@ body {
 
 /* About section */
 .about-section {
-  background: linear-gradient(to bottom, #d3fff7 0%, #d3fff7 45%, rgba(188, 222, 215, 0.85) 60%, rgba(188, 222, 215, 0.5) 75%, rgba(188, 222, 215, 0) 100%), url("../images/about-cake.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 40px;
-  padding-bottom: 60%;
+  /* background: linear-gradient(to bottom, #d3fff7 0%, #d3fff7 45%, rgba(188, 222, 215, 0.85) 60%, rgba(188, 222, 215, 0.5) 75%, rgba(188, 222, 215, 0) 100%), url("../images/about-cake.jpg"); */
+  background: url("../images/about-cake.jpg");
+  background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 340px;
 }
 
 .mission-section {
-  background: linear-gradient(to bottom, #d3fff7 0%, #d3fff7 45%, rgba(188, 222, 215, 0.85) 60%, rgba(188, 222, 215, 0.5) 75%, rgba(188, 222, 215, 0) 100%), url("../images/mission/mission.png");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
+  /* background: linear-gradient(to bottom, #d3fff7 0%, #d3fff7 45%, rgba(188, 222, 215, 0.85) 60%, rgba(188, 222, 215, 0.5) 75%, rgba(188, 222, 215, 0) 100%), url("../images/mission/mission.png"); */
+  background:  url("../images/mission/mission.jpg");
+  background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* TITLE */
@@ -225,8 +209,8 @@ body {
 .vission-below-section {
   background: url('../images/mission/vision.jpg');
   background-repeat: no-repeat;
-  padding-bottom: 600px;
-  background-size: 100% 200%;
+  padding-bottom: 380px;
+  background-size: 100% 100%;
   background-position: center;
 }
 
@@ -236,14 +220,23 @@ body {
 
 .mission-below-section .left {
   padding: 60px;
-}
-
-.mission-below-section .right {
+  font-size: 18px;
   background: url('../images/mission/mission-right.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
+
+.mission-below-section .left-content {
+  width: 50%;
+}
+
+/* .mission-below-section .right {
+  background: url('../images/mission/mission-right.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+} */
 
 .container {
   max-width: 900px;
@@ -297,7 +290,7 @@ body {
 
 .dream {
   background: url("../images/dream.jpg");
-  height: 1000px;
+  height: 530px;
   display: flex;
   /* align-items: center; */
   justify-content: center;
@@ -306,7 +299,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: -400px;
 }
 
 .social-icon {
@@ -364,8 +356,8 @@ body {
   background: url("../images/cupcake.jpg");
   background-repeat: no-repeat;
   padding: 20px 0 15rem 0;
-  background-size: 100% 112%;
-  background-position: top;
+  background-size: 100% 100%;
+  background-position: center;
 }
 
 .featured {
@@ -481,10 +473,13 @@ body {
   color: white;
 }
 
-@media(max-width:840px) {
+@media(max-width:915px) {
   .nav-links {
     gap: 15px;
     margin-right: 0;
+  }
+  .nav-links li {
+    font-size: 16px;
   }
 }
 
@@ -500,6 +495,10 @@ body {
 
   .about-section {
     padding-bottom: 300px;
+  }
+
+  .vission-section {
+    padding-bottom: 40px;
   }
 
   .hero {
@@ -519,6 +518,15 @@ body {
   .mission-below-section .right {
     height: 550px;
   }
+
+  .mission-below-section .left {
+    background: none;
+    padding: 40px;
+  }
+  .mission-below-section .left-content {
+    width: 100%;
+  }
+  
 
 }
 
