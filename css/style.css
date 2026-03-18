@@ -3,6 +3,29 @@ body {
   /* margin-top: 70px; */
 }
 
+@font-face {
+  font-family: 'SansitaSwashed_Regular';
+  src: url('../fonts/SansitaSwashed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SansitaSwashed_SemiBold';
+  src: url('../fonts/SansitaSwashed-SemiBold.ttf') format('truetype');
+}
+
+.font-sansita-regular {
+  font-family: 'SansitaSwashed_Regular', sans-serif !important;
+}
+
+.font-sansita-semibold {
+  font-family: 'SansitaSwashed_SemiBold', sans-serif !important;
+}
+
+.font-inter-regular {
+  font-family: 'inter' !important;
+  font-weight: 400;
+}
+
 .main-wrapper {
   max-width: 1280px;
   /* control your site width */
@@ -100,6 +123,9 @@ body {
 .nav-links li {
   cursor: pointer;
   position: relative;
+  font-family: 'Poppins';
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .nav-links li.active::after {
@@ -135,7 +161,7 @@ body {
 
 .hero-content p {
 
-  font-size: 17px;
+  font-size: 20px;
   color: #333;
   margin-bottom: 30px;
 
@@ -177,7 +203,7 @@ body {
 /* TITLE */
 .about-title {
   font-family: 'Playfair Display';
-  font-size: 52px;
+  font-size: 46px;
   margin-bottom: 30px;
   font-weight: bold;
 }
@@ -187,7 +213,7 @@ body {
   max-width: 900px;
   margin: auto;
   color: #333;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.3;
 }
 
@@ -344,7 +370,7 @@ body {
 
 .featured {
   background: #ead8b6;
-  padding: 70px 0;
+  padding: 40px 0;
 }
 
 .featured .card {
@@ -391,7 +417,9 @@ body {
 .footer li {
   margin-bottom: 10px;
 }
-
+.gallery {
+  margin-top: 45px;
+}
 .contact-section {
 
   background: #d3fff7;
@@ -402,7 +430,9 @@ body {
 .filter {
   margin: 0 20px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 24px;
+  font-family: 'Poppins';
+  font-weight: 600;
 }
 
 .filter.active {
@@ -496,6 +526,7 @@ body {
   .about-us-section {
     display: block !important;
   }
+
   .about-us-section .section-1 {
     width: 100% !important;
   }
