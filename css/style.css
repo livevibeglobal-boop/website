@@ -538,4 +538,14 @@ body {
   .about-us-section .section-1 {
     width: 100% !important;
   }
+
+  .hero {
+    background-image: url("../images/mob-chef.jpg");
+  }
+  .mission {
+    background-image: url("../images/mission/mob-banner.jpg");
+  }
+  .contact-us {
+    background-image: url("../images/contact-us/mob-banner.jpg");
+  }
 }
